@@ -1,0 +1,147 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", Arial;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  height: 100vh;
+  background: #1a2337;
+}
+
+p {
+  color: #808aa1;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.nav-icon {
+  width: 3rem;
+  display: flex;
+  margin-bottom: -3rem;
+}
+
+.nav-icon:hover {
+  cursor: pointer;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  background: #2e374c;
+  border-radius: 1rem;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+  flex-direction: column;
+  width: 5rem;
+  height: 40rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  gap: 3rem;
+}
+
+.navbar a {
+  color: #808aa1;
+  display: flex;
+  text-decoration: solid;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  color: white;
+  transform: scale(1.1);
+  transition: all 0.4 ease-in-out, transform 0.4 ease-in-out;
+}
+
+.center-container .weather-input {
+  width: auto;
+  margin-top: -21%;
+  position: fixed;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.weather-input .input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.weather-input .input-group input {
+  background: #2e374c;
+  text-transform: capitalize;
+  padding: 1rem;
+  font-size: 15px;
+  border-radius: 6px;
+  width: 50rem;
+  outline: none;
+  border: none;
+  height: 2.5rem;
+}
+
+.weather-input .input-group input::placeholder {
+  color: white;
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 7%;
+  margin-left: 2%;
+}
+.center-container .info-container {
+  display: flex;
+  align-items: center;
+  width: 75%;
+}
+
+.center-container .info-container .converter {
+  position: absolute;
+  right: 45px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.today-forecast {
+  background: #2e374c;
+  position: fixed;
+  margin-bottom: 15%;
+  display: flex;
+  width: auto;
+  height: fit-content;
+  border-radius: 0.5rem;
+}
+
+.air-conditions {
+  background: #2e374c;
+  position: inherit;
+  margin-bottom: 5rem;
+  display: flex;
+  width: auto;
+  height: fit-content;
+  border-radius: 0.5rem;
+}
+
+.forecast-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  background: #2e374c;
+  margin-left: 90%;
+  margin-bottom: 5%;
+  border-radius: 0.5rem;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+        <div class="navbar">
+            <img src="./assets/weatherIcon.png" alt="Weather Icon" class="icon">
+            <img src="./assets/weatherNav.png" alt="Weather Navigation" class="nav-icon">
+            <a href="index.html">Weather</a>
+            <img src="./assets/cities.png" alt="Cities Icon" class="nav-icon">
+            <a href="cities.html">Cities</a>
+            <img src="./assets/setting.png" alt="Setting Icon" class="nav-icon">
+            <a href="setting.html">Settings</a>
+        </div>
+        <div class="center-container">
+        <div class="weather-input">
+            <div class="input-group">
+                <input type="text" id="location" placeholder="Search Cities...">
+            </div>
+        </div>
+        <div class="info-container">
+            <select class="converter" id="converter">
+                <option>°C</option>
+                <option>°F</option>
+            </select>
+        </div>
+        <div class="today-forecast">
+            <p class="text1">ss</p>
+        </div>
+        <div class="air-conditions">
+            <p>abc</p>
+        </div>
+        </div>
+      </div>
+      <div class="forecast-container">
+        <p>7 day forecast</p>
+      </div>
+    </div>
+    <footer class="footer">
+        <p>Weather App.</p>
+    </footer>
+  </body>
+</html>
