@@ -1,70 +1,134 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=air"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=water_drop"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=location_on"
+    />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="container">
-      <div class="weather-input">
-        <div class="input-group">
-          <input type="text" id="location" placeholder="Search Location.." />
-          <select class="converter" id="converter">
-            <option>°C</option>
-            <option>°F</option>
-          </select>
-
-          <i class="fa fa-search" onclick="findLocation()"></i>
+    <main class="main-container">
+      <header class="input-container">
+        <input class="city-input" placeholder="Search Location..." />
+        <button class="search-btn">
+          <span class="material-symbols-outlined">
+            <img src="./assets/search.png" alt="" class="span-icon"
+          /></span>
+        </button>
+      </header>
+      <section class="weather-info" style="display: none">
+        <div class="location-date-container">
+          <div class="location">
+            <span class="material-symbols-outlined"> location_on </span>
+            <h4 class="country-txt">Jasin</h4>
+          </div>
+          <h5 class="current-date-txt regular-txt">Sun, 18 May</h5>
         </div>
-        <div class="weather-icon"></div>
-        <h2 class="temperature"></h2>
-        <div class="feelsLike"></div>
-        <div class="date"></div>
-        <div class="city"></div>
-      </div>
-      <div class="weather-output">
-        <h2 class="heading">Today's Weather</h2>
-        <div class="highlights">
-          <div class="humidity">
-            Humidity
-            <i class="fa-solid fa-water"></i>
-            <h1 id="HValue"></h1>
-          </div>
-          <div class="wind-speed">
-            Wind Speed
-            <i class="fa-solid fa-wind"></i>
-            <h1 id="WValue"></h1>
-          </div>
-          <div class="sun">
-            <span>
-              <i class="fa-solid fa-sun"></i>
-              <p><span id="SRValue"></span>Sunrise</p>
-            </span>
-            <span>
-              <i class="fa-regular fa-sun"></i>
-              <p><span id="SSValue"></span>Sunset</p>
-            </span>
-          </div>
-          <div class="clouds">
-            Clouds
-            <i class="fa-solid fa-cloud"></i>
-            <h1 id="CValue"></h1>
-          </div>
-          <div class="uv-index">
-            UV Index
-            <i class="fa-solid fa-bacon"></i>
-            <h1 id="UVValue"></h1>
-          </div>
-          <div class="pressure">
-            Pressure
-            <i class="fa-solid fa-volcano"></i>
-            <h1 id="PValue"></h1>
+        <div class="weather-summary-container">
+          <img
+            src="./assets/weather/clouds.svg"
+            alt="Weather icon"
+            class="weather-summary-img"
+          />
+          <div class="weather-summary-info">
+            <h1 class="temp-txt">29 °C</h1>
+            <h3 class="condition-txt regular-txt">Clouds</h3>
           </div>
         </div>
-        <br />
-        <h2 class="heading">This Week</h2>
-        <div class="forecast"></div>
-      </div>
-    </div>
+        <div class="weather-conditions-container">
+          <div class="conditions-item">
+            <span class="material-symbols-outlined">
+              <img src="./assets/humidity.png" alt="" class="span-icon" />
+            </span>
+            <div class="conditions-info">
+              <h5 class="regular-txt">Humidity</h5>
+              <h5 class="humidity-value-txt">55%</h5>
+            </div>
+          </div>
+          <div class="conditions-item">
+            <span class="material-symbols-outlined">
+              <img src="./assets/wind.png" alt="" class="span-icon" />
+            </span>
+            <div class="conditions-info">
+              <h5 class="regular-txt">Wind Speed</h5>
+              <h5 class="wind-value-txt">3 M/s</h5>
+            </div>
+          </div>
+        </div>
+        <div class="forecast-item-container">
+          <div class="forecast-item">
+            <h5 class="forecast-item-date regular-txt">18 May</h5>
+            <img
+              src="./assets/weather/thunderstorm.svg"
+              alt="Weather icon"
+              class="forecast-item-img"
+            />
+            <h5 class="forecast-item-temp">29 °C</h5>
+          </div>
+          <div class="forecast-item">
+            <h5 class="forecast-item-date regular-txt">18 May</h5>
+            <img
+              src="./assets/weather/thunderstorm.svg"
+              alt="Weather icon"
+              class="forecast-item-img"
+            />
+            <h5 class="forecast-item-temp">29 °C</h5>
+          </div>
+          <div class="forecast-item">
+            <h5 class="forecast-item-date regular-txt">18 May</h5>
+            <img
+              src="./assets/weather/thunderstorm.svg"
+              alt="Weather icon"
+              class="forecast-item-img"
+            />
+            <h5 class="forecast-item-temp">29 °C</h5>
+          </div>
+          <div class="forecast-item">
+            <h5 class="forecast-item-date regular-txt">18 May</h5>
+            <img
+              src="./assets/weather/thunderstorm.svg"
+              alt="Weather icon"
+              class="forecast-item-img"
+            />
+            <h5 class="forecast-item-temp">29 °C</h5>
+          </div>
+        </div>
+      </section>
+      <section class="search-city section-message">
+        <img src="./assets/message/search-city.png" alt="Search city" />
+        <div>
+          <h1>Search City</h1>
+          <h4 class="regular-txt">
+            Search out the weather condition of a city.
+          </h4>
+        </div>
+      </section>
+      <section class="not-found section-message" style="display: none">
+        <img src="./assets/message/not-found.png" alt="Search city" />
+        <div>
+          <h1>Search City</h1>
+          <h4 class="regular-txt">
+            Search out the weather condition of a city.
+          </h4>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
