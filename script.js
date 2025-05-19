@@ -126,7 +126,7 @@ function updateForecastItems(weatherData) {
                 alt="Weather icon"
                 class="forecast-item-img"
                 />
-                <h5 class="forecast-item-temp">${Math.round(temp)}</h5>
+                <h5 class="forecast-item-temp">${Math.round(temp) + " °C"}</h5>
             </div>
     `;
 
