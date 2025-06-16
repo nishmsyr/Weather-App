@@ -15,7 +15,9 @@ const windValueTxt = document.querySelector(".wind-value-txt");
 const weatherSummaryImg = document.querySelector(".weather-summary-img");
 const currentDateTxt = document.querySelector(".current-date-txt");
 
-const apiKey = "cdd131fae455315375ea6d8a5183ecdc";
+require("dotenv").config();
+
+const apiKey = process.env.API_KEY;
 
 searchBtn.addEventListener("click", () => {
   if (cityInput.value.trim() != "") {
