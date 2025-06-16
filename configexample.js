@@ -1,1 +1,1 @@
-API_KEY = "12345mda";
+//apiKey="123456MDA";
