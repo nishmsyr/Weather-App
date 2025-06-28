@@ -4,7 +4,7 @@ A simple and user-friendly web-based weather application that provides real-time
 
 ## ⚠️ Note on API Key
 
-This project uses an API (e.g. OpenWeather, Google Maps, etc.) that requires an API key, which **is not included** in this public repository for security reasons.
+This project uses an API (OpenWeatherAPI) that requires an API key, which **is not included** in this public repository for security reasons.
 
 ### 🔐 How to Run Locally
 
