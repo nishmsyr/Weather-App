@@ -17,7 +17,7 @@ To run the app on your local machine:
 ```js
 // config.js
 const API_KEY = "your_api_key_here";
-
+```
 
 ## 📸 Demo
 
