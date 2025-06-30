@@ -10,7 +10,7 @@ This project uses an API (OpenWeatherAPI) that requires an API key, which **is n
 
 To run the app on your local machine:
 
-1. Get your own API key from [[API Provider Name](https://example.com)](https://openweathermap.org/).
+1. Get your own API key from [OpenWeatherAPI](https://openweathermap.org/).
 2. Create a new file named `.env` or `config.js` or directly in your `script.js` as needed.
 3. Add your API key like this:
 
